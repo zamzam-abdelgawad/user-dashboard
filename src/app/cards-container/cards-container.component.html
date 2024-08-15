@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div class="container">
+  <div class="flex-container" *ngIf="!isLoading" @fadeIn>
+    <app-card *ngFor="let user of filterdUser"
+              [name]="user.first_name + ' ' + user.last_name"
+              [avatar]="user.avatar"
+              [id]="user.id"
+              appHoverHighlight="lightblue">
+    </app-card>
+  </div>
+</div>

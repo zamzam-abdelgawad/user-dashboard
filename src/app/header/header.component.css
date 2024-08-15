@@ -1,0 +1,27 @@
+.header {
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  outline: none; 
+}
+
+.search-bar::placeholder {
+  color: #999;
+  font-style: italic;
+}
